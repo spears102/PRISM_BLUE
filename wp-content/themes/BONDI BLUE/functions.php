@@ -56,3 +56,9 @@ function wp_custom_admin_css() {
     echo "\n" . '<link href="' .get_bloginfo('template_directory'). '/css/wp-admin.css' . '" rel="stylesheet" type="text/css" />' . "\n";
 }
 add_action( 'admin_head', 'wp_custom_admin_css', 100);
+
+//---------------------------------------------------------------------------
+//Include ACF
+//---------------------------------------------------------------------------
+
+include_once get_template_directory() . '/include-acf.php';
