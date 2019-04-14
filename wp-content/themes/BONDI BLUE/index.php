@@ -19,30 +19,36 @@
   </head>
   <body>
     <div id="wrapper">
-        <header></header>
-        <header id="fix">
-            <div class="logo"><a><img></a></div>
-            <nav>
+        <header>
+            <div id="headerleft">
+                <p id="headerleftkana">写真家 iwakura shiori</p>
+                <p id="headerleftname">岩倉しおり</p>
+            </div><!-- #headerleft -->
+            <div id="headerright">
                 <ul>
-                    <li><a><img></a></li>
-                    <li><a><img></a></li>
-                    <li><a><img></a></li>
-                    <li><a><img></a></li>
-                    <li><a><img></a></li>
-                    <li><a><img></a></li>
+                    <li><a href="">instagram</a></li>
+                    <li><a href="">facebook</a></li>
+                    <li><a href="">twitter</a></li>
                 </ul>
-            </nav>
-            <ul class="sns">
-                <li><a><img></a></li>
-                <li><a><img></a></li>
-                <li><a><img></a></li>
-            </ul>
+            </div><!-- #headerright -->
         </header>
-        <div id="main">
-            <h1>functions.phpで、関数を用いて端末判断を行う</h1>
-            <p>PCでは背景色が灰色に、<br>タブレットでは背景色が黄緑色に、<br>スマホでは背景色が黄色になります。</p>
-        </div><!-- #main -->
-        <footer></footer>
+        <div class="clear"></div><!-- .clear -->
+        <div id="menu">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="">PORTFOLIO</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+        </div><!-- #menu -->
+        <div id="worklist"></div><!-- #worklist -->
+        <footer>
+            <div id="footerleft"><p>2019 Image by iwakura shiori</p></div><!-- #footerleft -->
+            <div id="footerright">
+                <a href=""><img src="<?php bloginfo('template_directory'); ?>/img/prism-icon-sample.jpg"></a>
+            </div><!-- #footerright -->
+        </footer>
+        <div class="clear"></div><!-- .clear -->
     </div><!-- #wrapper -->
   </body>
 </html>

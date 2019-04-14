@@ -1,7 +1,114 @@
 @charset "urf-8";
-head, body {
-    background-color: #DBDBDB;
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: Georgia,游明朝,"Yu Mincho",YuMincho,"Hiragino Mincho ProN","Hiragino Mincho Pro",HGS明朝E,メイリオ,Meiryo,serif;
 }
-header {}
-#main {}
-footer {}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.page {
+    position: relative;
+    height: auto;
+    min-height: 100%;
+    box-sizing: border-box;
+}
+.clear {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    font-size: 0;
+    visibility: hidden;
+}
+/* #wrapper */
+#wrapper {
+    position: relative;
+    height: 100%;
+}
+/* header */
+header {
+    width: 100%;
+    height: 80px;
+    padding-top: 50px;
+}
+#headerleft {
+    width: 50%;
+    float: left;
+    text-align: left;
+}
+#headerleft p {
+    width: 320px;
+    text-align: center;
+}
+#headerleft p#headerleftkana {
+    font-size: 14px;
+    line-height: 15px;
+    letter-spacing: 4.2px;
+    margin-bottom: 14px;
+}
+#headerleft p#headerleftname {
+    font-size: 39px;
+    line-height: 43px;
+    letter-spacing: 1.1px;
+}
+#headerright {
+    width: 50%;
+    float: right;
+    text-align: right;
+}
+#headerright ul {
+    width: 280px;
+    text-align: center;
+    margin-right: 0;
+    margin-left: auto;
+}
+#headerright ul li {
+    display: inline-block;
+    font-size: 13px;
+}
+/* #menu */
+#menu {
+    width: 150px;
+    height: 120px;
+    text-align: left;
+    font-size: 15px;
+    line-height: 30px;
+    padding-left: 57px;
+    margin-top: 48px;
+}
+/* #worklist */
+#worklist {
+    height: 350px;
+}
+/* #footer */
+footer {
+    width: 100%;
+    height: 80px;
+    font-size: 15px;
+    letter-spacing: 3px;
+}
+#footerleft {
+    width: 50%;
+    float: left;
+    text-align: left;
+}
+#footerleft p {
+    padding-left: 57px;
+}
+#footerright {
+    width: 50%;
+    float: right;
+    text-align: right;
+}
+#footerright a {
+    margin-right: 68px;
+    width: 35px;
+    height: auto;
+    display: inline-block;
+}
+#footerright img {
+    width: 35px;
+    height: auto;
+}
