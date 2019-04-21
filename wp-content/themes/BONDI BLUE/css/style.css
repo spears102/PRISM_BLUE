@@ -81,6 +81,7 @@ footer {
     height: 80px;
     font-size: 15px;
     letter-spacing: 3px;
+    margin-top: 150px;
 }
 #footerleft {
     width: 50%;
@@ -125,3 +126,28 @@ footer {
 }
 
 /* PORTFOLIOページ */
+#portfolio {
+    width: 53.125%;
+    text-align: center;
+    margin: 0 auto;
+}
+#portfolio ul {
+    margin-top: 87px;
+}
+#portfolio ul:first-child {
+    margin-top: -53px;
+}
+#portfolio ul li {
+    width: 23.5%;
+    display: inline-block;
+    margin: 0 7%;
+}
+#portfolio ul li:first-child {
+    margin-left: 0;
+}
+#portfolio ul li:last-child {
+    margin-right: 0;
+}
+#portfolio ul li img {
+    margin-bottom: 20px;
+}
