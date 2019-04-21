@@ -1,10 +1,8 @@
 <?php
-/*
-Template Name: Page_portfolio
-*/
-?>
-<?php get_header(); ?>
-        <div id="portfoliolist"></div><!-- #portfoliolist -->
+/**
+ * Theme footer.
+ */
+ ?>
         <footer>
             <div id="footerleft"><p>2019 Image by iwakura shiori</p></div><!-- #footerleft -->
             <div id="footerright">

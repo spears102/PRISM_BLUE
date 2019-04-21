@@ -58,7 +58,22 @@ function wp_custom_admin_css() {
 add_action( 'admin_head', 'wp_custom_admin_css', 100);
 
 //---------------------------------------------------------------------------
-//Include ACF
+//ACFの読み込み
 //---------------------------------------------------------------------------
 
 include_once get_template_directory() . '/include-acf.php';
+
+
+/**
+ * Load scripts and style sheets
+ */
+function load_scripts(){
+  wp_enqueue_script(
+    'fancyboxs', // ハンドル名
+    get_template_directory_uri() . '/js/main.js',
+    array( 'jquery' ), // 先に読み込まれているべきScript（ハンドル名）
+    filemtime( get_template_directory() . '/js/mainjs' ), // バージョン情報
+    false // Bodyタグの最後でロードしますか？
+  );
+}
+add_action( 'wp_enqueue_scripts', 'load_scripts' );
