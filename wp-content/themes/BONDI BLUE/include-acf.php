@@ -34,5 +34,3 @@ function my_acf_settings_dir( $dir ) {
 
 // 4. Include ACF
 include_once( get_stylesheet_directory() . '/acf/acf-plugin/acf.php' );
-
-?>

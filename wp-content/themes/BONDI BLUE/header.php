@@ -10,7 +10,7 @@
     <meta name="description" content="BONDI BLUEはWD2の開発した新しいテーマです。">
     <meta name="keywords" content="BONDI BLUE">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>BONDI BLUE</title>
+    <title><?php wp_title(); ?></title>
     <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css">
     <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/css/reset.css">
     <?php if( is_mobile()) : ?>
@@ -25,7 +25,7 @@
     <div id="wrapper">
         <header>
             <div id="headerleft">
-                <p id="headerleftname">岩倉しおり</p>
+                <p id="headerleftname"><?php display_logo() ?></p>
             </div><!-- #headerleft -->
             <div id="headerright">
                 <ul>
