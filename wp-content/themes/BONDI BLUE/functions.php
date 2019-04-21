@@ -1,4 +1,5 @@
 <?php
+
 //---------------------------------------------------------------------------
 //スマホならtrueを返すis_mobile関数作成
 //---------------------------------------------------------------------------
@@ -63,17 +64,72 @@ add_action( 'admin_head', 'wp_custom_admin_css', 100);
 
 include_once get_template_directory() . '/include-acf.php';
 
+//---------------------------------------------------------------------------
+//acf-chestの読み込み
+//---------------------------------------------------------------------------
 
-/**
- * Load scripts and style sheets
- */
-function load_scripts(){
-  wp_enqueue_script(
-    'fancyboxs', // ハンドル名
-    get_template_directory_uri() . '/js/main.js',
-    array( 'jquery' ), // 先に読み込まれているべきScript（ハンドル名）
-    filemtime( get_template_directory() . '/js/mainjs' ), // バージョン情報
-    false // Bodyタグの最後でロードしますか？
-  );
+include_once( get_stylesheet_directory() . '/acf-chest.php' );
+
+
+//---------------------------------------------------------------------------
+//ACFのオプション管理画面を追加
+//----------------------------------------------------------------------------
+
+
+if( function_exists('acf_add_options_page') ) {
+
+	acf_add_options_page(array(
+		'page_title' 	=> 'WD2Themes',
+		'menu_title'	=> 'WD2Themes',
+		'menu_slug' 	=> 'theme-options',
+		'capability'	=> 'edit_posts',
+		'parent_slug'	=> '',
+		'position'	=> false,
+		'redirect'	=> false,
+	));
+
+	acf_add_options_sub_page(array(
+		'page_title' 	=> '1. All Page',
+		'menu_title'	=> '1. All Page',
+		'menu_slug' 	=> 'theme-options-allpage',
+		'capability'	=> 'edit_posts',
+		'parent_slug'	=> 'theme-options',
+		'position'	=> false,
+	));
+
+	acf_add_options_sub_page(array(
+		'page_title' 	=> '2. Home',
+		'menu_title'	=> '2. Home',
+		'menu_slug' 	=> 'theme-options-home',
+		'capability'	=> 'edit_posts',
+		'parent_slug'	=> 'theme-options',
+		'position'	=> false,
+	));
+
+	acf_add_options_sub_page(array(
+		'page_title' 	=> '3. About',
+		'menu_title'	=> '3. About',
+		'menu_slug' 	=> 'theme-options-about',
+		'capability'	=> 'edit_posts',
+		'parent_slug'	=> 'theme-options',
+		'position'	=> false,
+	));
+
+ 	acf_add_options_sub_page(array(
+		'page_title' 	=> '4. Gallery',
+		'menu_title'	=> '4. Gallery',
+		'menu_slug' 	=> 'theme-options-Gallery',
+		'capability'	=> 'edit_posts',
+		'parent_slug'	=> 'theme-options',
+		'position'	=> false,
+	));
 }
-add_action( 'wp_enqueue_scripts', 'load_scripts' );
+//---------------------------------------------------------------------------
+//相対パス
+//----------------------------------------------------------------------------
+
+function replaceImagePath($arg) {
+    $content = str_replace('"images/', '"' . get_stylesheet_directory_uri() . '/images/', $arg);
+        return $content;
+}
+add_action('the_content', 'replaceImagePath');
