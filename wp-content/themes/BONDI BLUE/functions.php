@@ -68,7 +68,7 @@ include_once get_template_directory() . '/include-acf.php';
 //acf-chestの読み込み
 //---------------------------------------------------------------------------
 
-include_once( get_stylesheet_directory() . '/acf-chest.php' );
+include_once( get_stylesheet_directory() . '/acf/acf-chest.php' );
 
 
 //---------------------------------------------------------------------------
@@ -133,3 +133,9 @@ function replaceImagePath($arg) {
         return $content;
 }
 add_action('the_content', 'replaceImagePath');
+
+//---------------------------------------------------------------------------
+//アイキャッチを許可
+//----------------------------------------------------------------------------
+
+ add_theme_support('post-thumbnails');
