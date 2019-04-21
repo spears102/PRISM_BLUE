@@ -43,20 +43,11 @@ header {
     float: left;
     text-align: left;
 }
-#headerleft p {
-    width: 320px;
-    text-align: center;
-}
-#headerleft p#headerleftkana {
-    font-size: 14px;
-    line-height: 15px;
-    letter-spacing: 4.2px;
-    margin-bottom: 14px;
-}
 #headerleft p#headerleftname {
     font-size: 39px;
     line-height: 43px;
     letter-spacing: 1.1px;
+    padding-left: 57px;
 }
 #headerright {
     width: 50%;
@@ -83,22 +74,6 @@ header {
     line-height: 30px;
     padding-left: 57px;
     margin-top: 48px;
-}
-/* #worklist */
-#worklist {
-    height: 340px;
-    margin-top: 33vh;
-}
-#worklist ul li {
-    display: inline-block;
-    font-size: 43px;
-    line-height: 63px;
-}
-#worklist ul li:after {
-    content: "/ ";
-}
-#worklist ul li:last-child:after {
-    content: "";
 }
 /* #footer */
 footer {
@@ -130,3 +105,23 @@ footer {
     width: 35px;
     height: auto;
 }
+
+/* TOPページ */
+/* #worklist */
+#worklist {
+    height: 340px;
+    margin-top: 33vh;
+}
+#worklist ul li {
+    display: inline-block;
+    font-size: 43px;
+    line-height: 63px;
+}
+#worklist ul li:after {
+    content: "/ ";
+}
+#worklist ul li:last-child:after {
+    content: "";
+}
+
+/* PORTFOLIOページ */

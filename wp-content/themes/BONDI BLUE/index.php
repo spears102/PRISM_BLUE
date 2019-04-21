@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="content-language" content="ja">
-    <meta name="description" content="BEAST">
-    <meta name="keywords" content="BEAST">
+    <meta name="description" content="BONDI BLUEはWD2の開発した新しいテーマです。">
+    <meta name="keywords" content="BONDI BLUE">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>BEAST</title>
+    <title>BONDI BLUE</title>
     <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css">
     <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/css/reset.css">
     <?php if( is_mobile()) : ?>
@@ -21,7 +21,6 @@
     <div id="wrapper">
         <header>
             <div id="headerleft">
-                <p id="headerleftkana">写真家 iwakura shiori</p>
                 <p id="headerleftname">岩倉しおり</p>
             </div><!-- #headerleft -->
             <div id="headerright">
@@ -35,10 +34,10 @@
         <div class="clear"></div><!-- .clear -->
         <div id="menu">
             <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="">PORTFOLIO</a></li>
-                <li><a href="">ABOUT</a></li>
-                <li><a href="">CONTACT</a></li>
+                <li><a href="<?php echo home_url(); ?>">HOME</a></li>
+                <li><a href="<?php echo home_url( 'portfolio' ); ?>">PORTFOLIO</a></li>
+                <li><a href="<?php echo home_url( 'about' ); ?>">ABOUT</a></li>
+                <li><a href="<?php echo home_url( 'contact' ); ?>">CONTACT</a></li>
             </ul>
         </div><!-- #menu -->
         <div id="worklist">
