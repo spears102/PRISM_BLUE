@@ -139,3 +139,9 @@ add_action('the_content', 'replaceImagePath');
 //----------------------------------------------------------------------------
 
  add_theme_support('post-thumbnails');
+
+require 'theme_update_check.php';
+$KernlUpdater = new ThemeUpdateChecker(
+    'blue_theme',
+    'https://kernl.us/api/v1/theme-updates/5cd128a83a545c792d6ea311/'
+);
