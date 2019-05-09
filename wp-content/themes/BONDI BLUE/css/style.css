@@ -126,28 +126,61 @@ footer {
 }
 
 /* PORTFOLIOページ */
-#portfolio {
+/* #portfolio_typea */
+#portfolio_typea {
     width: 53.125%;
     text-align: center;
-    margin: 0 auto;
+    margin: -140px auto 0 auto;
 }
-#portfolio ul {
+#portfolio_typea ul {
     margin-top: 87px;
 }
-#portfolio ul:first-child {
-    margin-top: -53px;
-}
-#portfolio ul li {
+#portfolio_typea ul li {
     width: 23.5%;
     display: inline-block;
     margin: 0 7%;
 }
-#portfolio ul li:first-child {
+#portfolio_typea ul li:first-child {
     margin-left: 0;
 }
-#portfolio ul li:last-child {
+#portfolio_typea ul li:last-child {
     margin-right: 0;
 }
-#portfolio ul li img {
+#portfolio_typea ul li img {
     margin-bottom: 20px;
+}
+/* #portfolio_typeb */
+#portfolio_typeb {
+    width: 56.5%;
+    margin: -102px auto 0 auto;
+    font-size: 18px;
+    text-align: left;
+}
+#portfolio_typeb ul {
+    width: 20%;
+    margin-right: 20%;
+    float: left;
+}
+#portfolio_typeb ul:last-of-type {
+    margin-right: 0;
+}
+#portfolio_typeb ul li {
+    margin: 35px 0;
+}
+/* #portfolio_typec */
+#portfolio_typec {
+    height: 88px;
+    margin-top: 33vh;
+    margin-bottom: 39vh;
+}
+#portfolio_typec ul li {
+    display: inline-block;
+    font-size: 20px;
+    line-height: 34px;
+}
+#portfolio_typec ul li:after {
+    content: "/ ";
+}
+#portfolio_typec ul li:last-child:after {
+    content: "";
 }
