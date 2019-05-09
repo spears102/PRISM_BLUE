@@ -108,21 +108,57 @@ footer {
 }
 
 /* TOPページ */
-/* #worklist */
-#worklist {
+/* #home_typea */
+#home_typea {
     height: 340px;
     margin-top: 33vh;
 }
-#worklist ul li {
+#home_typea ul li {
     display: inline-block;
     font-size: 43px;
     line-height: 63px;
 }
-#worklist ul li:after {
+#home_typea ul li:after {
     content: "/ ";
 }
-#worklist ul li:last-child:after {
+#home_typea ul li:last-child:after {
     content: "";
+}
+/* #home_typeb */
+#home_typeb {
+    height: 108px;
+    margin-top: calc(79vh - 250px);
+}
+#home_typeb ul li {
+    display: inline-block;
+    font-size: 20px;
+    line-height: 44px;
+}
+#home_typeb ul li:after {
+    content: "/ ";
+}
+#home_typeb ul li:last-child:after {
+    content: "";
+}
+/* #home_typec */
+#home_typec {
+    margin-left: 57px;
+    margin-top: -133px;
+    text-align: left;
+    font-size: 20px;
+}
+#home_typec ul li {
+    margin: 20px 0;
+}
+/* #home_typed */
+#home_typed {
+    margin-right: 68px;
+    margin-top: -133px;
+    text-align: right;
+    font-size: 20px;
+}
+#home_typed ul li {
+    margin: 20px 0;
 }
 
 /* PORTFOLIOページ */
@@ -170,8 +206,7 @@ footer {
 /* #portfolio_typec */
 #portfolio_typec {
     height: 88px;
-    margin-top: 33vh;
-    margin-bottom: 39vh;
+    margin: calc((100vh - 88px) / 2 - 250px) auto calc((100vh - 88px) / 2 - 80px) auto;
 }
 #portfolio_typec ul li {
     display: inline-block;
