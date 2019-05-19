@@ -65,8 +65,8 @@ header {
     font-size: 13px;
     padding: 0 6px;
 }
-/* #menu */
-#menu {
+/* #menu_typea */
+#menu_typea {
     width: 150px;
     height: 120px;
     text-align: left;
@@ -74,6 +74,25 @@ header {
     line-height: 30px;
     padding-left: 57px;
     margin-top: 48px;
+}
+/* #menu_typeb */
+#menu_typeb {
+    width: 50%;
+    height: 120px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 30px;
+    margin: 0 auto;
+    position: relative;
+    top: -86px;
+}
+#menu_typeb ul {
+    text-align: center;
+}
+#menu_typeb ul li {
+    display: inline-block;
+    font-size: 14px;
+    padding: 0 36px;
 }
 /* #footer */
 footer {

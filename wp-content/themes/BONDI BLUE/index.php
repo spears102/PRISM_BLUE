@@ -44,10 +44,10 @@
                 <li><a href="">旅行中に見つけた向日葵畑</a></li>
                 <li><a href="">夏の匂い。</a></li>
                 <li><a href="">海での時間</a></li>
-                <li><a href="">夏の日差し</li>
-                <li><a href="">光の模様</li>
-                <li><a href="">初夏</li>
-                <li><a href="">夏の窓枠</li>
+                <li><a href="">夏の日差し</a></li>
+                <li><a href="">光の模様</a></li>
+                <li><a href="">初夏</a></li>
+                <li><a href="">夏の窓枠</a></li>
             </ul>
             <ul>
                 <li><a href="">夏の午後</a></li>

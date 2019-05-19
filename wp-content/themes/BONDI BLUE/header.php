@@ -36,11 +36,19 @@
             </div><!-- #headerright -->
         </header>
         <div class="clear"></div><!-- .clear -->
-        <div id="menu">
+        <div id="menu_typea">
             <ul>
                 <li><a href="<?php echo home_url(); ?>">HOME</a></li>
                 <li><a href="<?php echo home_url( 'portfolio' ); ?>">PORTFOLIO</a></li>
                 <li><a href="<?php echo home_url( 'about' ); ?>">ABOUT</a></li>
                 <li><a href="<?php echo home_url( 'contact' ); ?>">CONTACT</a></li>
             </ul>
-        </div><!-- #menu -->
+        </div><!-- #menu_typea -->
+        <div id="menu_typeb">
+            <ul>
+                <li><a href="<?php echo home_url(); ?>">HOME</a></li>
+                <li><a href="<?php echo home_url( 'portfolio' ); ?>">PORTFOLIO</a></li>
+                <li><a href="<?php echo home_url( 'about' ); ?>">ABOUT</a></li>
+                <li><a href="<?php echo home_url( 'contact' ); ?>">CONTACT</a></li>
+            </ul>
+        </div><!-- #menu_typeb -->
